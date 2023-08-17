@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Kalkulator</title>
+</head>
+
+<body>
+    <nav>
+        <h3>Kalkulator Segitiga</h3>
+    </nav>
+    <div id="box">
+        <div>
+            <button class="buttons active" onclick="goLuas()">Luas</button>
+            <button class="buttons" onclick="goKeliling()">Keliling</button>
+        </div>
+        <br />
+        <form id="formLuas">
+            <label>Masukan tinggi : </label>
+            <input id="tinggi" type="number" placeholder="Tinggi"><br />
+            <label>Masukan alas&nbsp&nbsp&nbsp : </label>
+            <input id="alas" type="number" placeholder="Alas"><br />
+            <br />
+            <button class="buttons" onclick="submitLuas(); return false;">Submit</button>
+            <br />
+        </form>
+        <form id="formKeliling">
+            <label>Masukan panjang sisi A : </label>
+            <input id="sisiA" type="number" placeholder="Sisi A"><br/>
+            <label>Masukan panjang sisi B : </label>
+            <input id="sisiB" type="number" placeholder="Sisi B"><br/>
+            <label>Masukan panjang sisi C : </label>
+            <input id="sisiC" type="number" placeholder="Sisi C"><br/>
+            <br />
+            <button class="buttons" onclick="submitKeliling(); return false;">Submit</button>
+            <br />
+        </form>
+        <br />
+        <div id="answer">
+        </div>
+    </div>
+</body>
+
+</html>
